@@ -6,11 +6,20 @@
 
 void Resta(){
     float n1 = 0.0, n2 = 0.0;
-    printf("escribe el primer numero que deseas restar: ");
+    printf("Escribe el primer numero que deseas restar: ");
     scanf("%f", &n1);
-    printf("escribe el segundo numero que deseas restar: ");
+    printf("Escribe el segundo numero que deseas restar: ");
     scanf("%f", &n2);
     printf("El resultado es: %.2f", n1 - n2);
+}
+
+void Suma(){
+    float n1 = 0.0, n2 = 0.0;
+    printf("Escribe el primer numero que deseas sumar: ");
+    scanf("%f", &n1);
+    printf("Escribe el segundo numero que deseas sumar: ");
+    scanf("%f", &n2);
+    printf("El resultado es: %.2f", n1 + n2);
 }
 
 void main(){
@@ -28,7 +37,7 @@ void main(){
     switch (menu)
     {
     case 1:
-        printf("Funciona.");
+        Suma();
         break;
     case 2:
         Resta();
