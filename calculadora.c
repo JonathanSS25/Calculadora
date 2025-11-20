@@ -2,8 +2,19 @@
 
 //Pruebas de GIT
 
+//Funciones
+
+void Resta(){
+    float n1 = 0.0, n2 = 0.0;
+    printf("escribe el primer numero que deseas restar: ");
+    scanf("%f", &n1);
+    printf("escribe el segundo numero que deseas restar: ");
+    scanf("%f", &n2);
+    printf("El resultado es: %.2f", n1 - n2);
+}
+
 void main(){
-    int menu=0;
+    int menu = 0;
 
     printf("Hello world.\n");
     printf("--------Calculadora--------\n");
@@ -12,7 +23,7 @@ void main(){
     printf("2.Resta\n");
     printf("3.Multiplicacion\n");
     printf("4.Division\n");
-    scanf("%d", menu);
+    scanf("%d", &menu);
 
     switch (menu)
     {
@@ -20,7 +31,7 @@ void main(){
         printf("Funciona.");
         break;
     case 2:
-        printf("Funciona.");
+        Resta();
         break;
     case 3:
         printf("Funciona.");
