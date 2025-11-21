@@ -25,9 +25,9 @@ void Suma(){
 void Multiplicacion()
 {
     float n1 = 0.0, n2 = 0.0;
-    printf("Escribe el primer numero a multiplicar");
+    printf("Escribe el primer numero a multiplicar: ");
     scanf("%f", &n1);
-    printf("Escribe el primer numero a multiplicar");
+    printf("Escribe el primer numero a multiplicar: ");
     scanf("%f", &n2);
     printf("El resultado es: %.2f", n1 * n2);
 }
