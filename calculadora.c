@@ -22,6 +22,16 @@ void Suma(){
     printf("El resultado es: %.2f", n1 + n2);
 }
 
+void Multiplicacion()
+{
+    float n1 = 0.0, n2 = 0.0;
+    printf("Escribe el primer numero a multiplicar");
+    scanf("%f", &n1);
+    printf("Escribe el primer numero a multiplicar");
+    scanf("%f", &n2);
+    printf("El resultado es: %.2f", n1 * n2);
+}
+
 void main(){
     int menu = 0;
 
@@ -43,7 +53,7 @@ void main(){
         Resta();
         break;
     case 3:
-        printf("Funciona.");
+        Multiplicacion();
         break;
     case 4:
         printf("Funciona.");
