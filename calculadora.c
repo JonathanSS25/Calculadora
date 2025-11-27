@@ -32,16 +32,34 @@ void Multiplicacion()
     printf("El resultado es: %.2f", n1 * n2);
 }
 
+void Division()
+{
+    float n1 = 0.0, n2 = 0.0;
+    printf("Escribe el primer numero a dividir: ");
+    scanf("%f", &n1);
+    printf("Escribe el segundo numero a dividir: ");
+    scanf("%f", &n2);
+    if (n2 != 0)
+    {
+        printf("El resultado es: %.2f", n1 / n2);
+    }
+    else
+    {
+        printf("Error: Division por cero no permitida.");
+    }
+}
+
 void main(){
     int menu = 0;
 
-    printf("Hello world.\n");
     printf("--------Calculadora--------\n");
     printf("Opciones\n");
     printf("1.Suma\n");
     printf("2.Resta\n");
     printf("3.Multiplicacion\n");
     printf("4.Division\n");
+    printf("6. Salir\n");
+    printf("Elige una opcion: ");
     scanf("%d", &menu);
 
     switch (menu)
@@ -56,8 +74,11 @@ void main(){
         Multiplicacion();
         break;
     case 4:
-        printf("Funciona.");
-        break;        
+        Division();
+        break;       
+    case 6:
+        printf("Adios..."); 
+        break;
     default:
     printf("Opcion invalida, prueba de nuevo.");
         break;
