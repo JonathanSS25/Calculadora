@@ -35,7 +35,6 @@ void Multiplicacion()
 void main(){
     int menu = 0;
 
-    printf("Hello world.\n");
     printf("--------Calculadora--------\n");
     printf("Opciones\n");
     printf("1.Suma\n");
