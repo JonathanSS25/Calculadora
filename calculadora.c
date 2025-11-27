@@ -22,7 +22,7 @@ void Suma(){
     printf("El resultado es: %.2f", n1 + n2);
 }
 
-void Multiplicacion()
+void Division()
 {
     float n1 = 0.0, n2 = 0.0;
     printf("Escribe el primer numero a multiplicar: ");
