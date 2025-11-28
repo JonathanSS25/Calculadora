@@ -83,5 +83,7 @@ void main(){
     printf("Opcion invalida, prueba de nuevo.");
         break;
     }
+
+    return 0;
 }
 
