@@ -49,6 +49,19 @@ void Division()
     }
 }
 
+void Potencia() {
+    float n1 = 0.0, n2 = 0.0, resultado = 0.0;
+    printf("Escribe el numero a elevar: ");
+    scanf("%f", &n1);
+    printf("Escribe la potencia: ");
+    scanf("%f", &n2);
+    for (int i = 0; i < n2; i++) {
+        resultado *= n1;
+    }
+
+    printf("El resultado es: %.2f", resultado);
+}
+
 void main(){
     int menu = 0;
 
